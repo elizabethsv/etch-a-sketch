@@ -6,5 +6,8 @@ for(let i = 0; i < 256; i++){
     gridDiv = document.createElement("div")
     gridDiv.className = "gridDiv"
     containerDiv.insertAdjacentElement('beforeend',gridDiv)
+    gridDiv.addEventListener("mouseover", function(e){
+        e.target.style.backgroundColor = "pink"
+    })
 }
 
